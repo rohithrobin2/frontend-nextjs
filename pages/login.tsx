@@ -11,7 +11,7 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import router from "next/router";
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { userDetails } from "./api/feed";
 import { loginDetails } from "./api/login";
 
@@ -35,7 +35,7 @@ function login() {
 
       router.push(`/components/profile/${res?.data?.id}`);
     } else {
-      setMessage('Invalid Credentials');
+      setMessage("Invalid Credentials");
       setOpen(true);
     }
   }
@@ -50,7 +50,6 @@ function login() {
 
   const handleSubmit = () => {
     loginToAccount(email, password);
-    console.log("hai", email, password);
   };
 
   const handleClose = () => {

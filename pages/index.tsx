@@ -14,14 +14,18 @@ export default function Home() {
             </Typography>
             <Grid></Grid>
 
-            <Box>
+            <Box sx={{ width: '50%'}}>
               <Typography>
-                <Link href="/login">Login to your account</Link>
+              Click here to  <Link href="/login">Login to your account</Link>
               </Typography>
               <Typography variant="subtitle2">
-                If you are a new user,{" "}
+                If you are a new user?{" "}
                 <Link href="/register">click here to register</Link>
               </Typography>
+              
+            </Box>
+            <Box sx={{ width: '50%'}} component="img" alt="image" src="faw.webp" >
+
             </Box>
           </Card>
         </Stack>
